@@ -2,6 +2,7 @@
 爬P站同人图的python脚本
 
 使用方法 将self.pixiv_id,self.pixiv_password 改为你的P站账号密码。
+
 python3 PixivSpider.py <P站搜索内容> <图片保存位置> <保存图片拥有的最少星星数> <爬取页数>
 
 例如：
