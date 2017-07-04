@@ -30,8 +30,8 @@ class PixivSpider:
         self.img_list = []
         self.less_start = int(less_start)
         self.crawl_page = int(crawl_page)
-        self.pixiv_id = 'imquanquan99'
-        self.pixiv_password = 'mjm2mhq134'
+        self.pixiv_id = 'userid'
+        self.pixiv_password = 'passwd'
         self.headers = {
             'Referer' : 'https://accounts.pixiv.net/login?return_to=https%3A%2F%2Fwww.pixiv.net%2F&lang=zh&source=accounts&view_type=page&ref=',
             'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
