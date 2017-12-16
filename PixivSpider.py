@@ -88,14 +88,13 @@ class Handler(BaseHandler):
                     'Referer' : response.save['image'][3] ,
                 }
         image_url = response.doc('.wrapper img').attr['data-src']
+        file_name = response.save['image'][0] + '-' + response.save['image'][0] + '.png'
         if image_url:
             image = requests.get(image_url, headers=headers).content
-            with open(response.save['image'][0] + '.png', 'wb') as f:
+            with open(file_name, 'wb') as f:
                 f.write(image)
         else:
             image_url = response.doc('._layout-thumbnail img').attr['src']
             image = requests.get(image_url, headers=headers).content
-            with open(response.save['image'][0] + '.png', 'wb') as f:
+            with open(file_name, 'wb') as f:
                 f.write(image)
-
-            
